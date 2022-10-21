@@ -16,7 +16,7 @@ import configparser
 import questionary
 from utils import download
 
-parser = argparse.ArgumentParser(description='\033[93mGENIE-DL by vank0n © 2021 vank0n (SJJeon) - All Rights Reserved.\033[0m',epilog="https://github.com/WHTJEON/genie-music-downloader")
+parser = argparse.ArgumentParser(description='\033[93mGENIE-DL')
 parser.add_argument('-c', '--download-chart',default=None,help = "Download Genie TOP 200 Chart",metavar="RANGE")
 parser.add_argument('-i','--input',default=None,required=False,help = "Download Genie Song/Album/Playlist",metavar="URL")
 parser.add_argument('--reset',action='store_true',help="Reset Credentials")
@@ -551,7 +551,7 @@ def main():
 |  \____/_____/_/ |_/___/_____/    /_____/_____/  |
 |                                                 |
 ===================================================
-	 GENIE-DL v.1.0.5 by vank0n (SJJeon)
+	 GENIE-DL v.1.0.5
 	'''
 	options = ['Download Song / Album / Artist / Playlist', 'Download Real-Time Chart', 'View Real-Time Chart', 'Search and Download Song','Search and Download Album','Search and Download Artist','Exit']
 	selected = pick(options, text, multiselect=False, min_selection_count=1,indicator="=>")[1]
